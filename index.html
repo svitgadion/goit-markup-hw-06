@@ -37,14 +37,18 @@
                     <a class="post-contakt" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        <button type="button" class="header-burger-btn" data-menu-open>
+            <svg class="header-burger-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+        </button> 
         </div>
     </header>
     <main>
         <section class="fon">
             <div class="container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button class="post-link" type="button">
-                    <span class="post-link-text">Order Service</span>
+                <button class="post-link" type="button" data-modal-open>Order Service</span>
                 </button>
             </div>
         </section>
@@ -97,7 +101,10 @@
                 <h2 class="title-two">Our Team</h2>
                 <ul class="title-two-list">
                     <li class="image">
-                        <img src="./images/Mark.jpg" alt="чоловік" width="264" height="260">
+                        <img 
+                        srcset="./images/Mark-min.jpg 1x, ./images/Mark2x -min.jpg 2x"
+                        src="./images/Mark-min.jpg"
+                        alt="чоловік" width="264" height="260">
                         <div class="title-two-list-conteiner">
                             <h3 class="name">Mark Guerrero</h3>
                             <p class="profession">Product Designer</p>
@@ -134,7 +141,9 @@
                         </div>
                     </li>
                     <li class="image">
-                        <img src="./images/Tom.jpg" alt="чоловік" width="264" height="260">
+                        <img 
+                        src="./images/Tom.jpg" 
+                        alt="чоловік" width="264" height="260">
                         <div class="title-two-list-conteiner">
                             <h3 class="name">Tom Ford</h3>
                             <p class="profession">Frontend Developer</p>
@@ -171,7 +180,9 @@
                         </div>
                     </li>
                     <li class="image">
-                        <img src="./images/Camila.jpg" alt="жінка" width="264" height="260">
+                        <img 
+                        src="./images/Camila.jpg" 
+                        alt="жінка" width="264" height="260">
                         <div class="title-two-list-conteiner">
                             <h3 class="name">Camila Garcia</h3>
                             <p class="profession">Marketing</p>
@@ -208,7 +219,9 @@
                         </div>
                     </li>
                     <li class="image">
-                        <img src="./images/Daniel.jpg" alt="чоловік" width="264" height="260">
+                        <img 
+                        src="./images/Daniel.jpg" 
+                        alt="чоловік" width="264" height="260">
                         <div class="title-two-list-conteiner">
                             <h3 class="name">Daniel Wilson</h3>
                             <p class="profession">UI Designer</p>
@@ -253,6 +266,10 @@
                 <ul class="title-three-list">
                     <li class="title-three-image">
                         <div class="title-three-conteiner">
+                            <picture>
+                                <source
+                                srcset=""
+                            </picture>
                             <img src="./images/portfolio1.jpg" alt="сторінки банкінгу" width="360" height="300">
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
@@ -360,7 +377,7 @@
             </div>
             <div class="down-text-conteiner-two">
                 <p class="down-text">Subscribe</p>
-                <form class="subscribe-form">
+                <form class="subscribe-form" name="subscribe-form" autocomplete="off" novalidate>
                     <label class="label-subscribe-form" for="subscribe-email">
                         <input type="email" class="subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="E-mail">
                     </label>
@@ -374,7 +391,6 @@
             </div>
         </div>
     </footer>
-    
     <div class="backdrop">
         <div class="modal">
             <button class="modal-closebtn" type="button">
@@ -439,7 +455,66 @@
             </form>
         </div>
     </div>
-
+    <div class="burger" data-menu>
+        <button type="button" class="modal-closebtn" data-menu-close>
+            <svg class="modal-closeimg" width="8" height="8">
+                <use href=""></use>
+            </svg>
+        </button>
+        <ul class="burger-menu-list">
+            <li class="burger-menu-item">
+                <a href="" class="burger-menu-link active">Studio</a>
+            </li>
+            <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">Portfolio</a>
+            </li>
+            <li class="burger-menu-item">
+                <a href="" class="burger-menu-link">Contacts</a>
+            </li>
+        </ul>
+        <address class="burger-address">
+            <ul class="burger-address-list">
+                <li>
+                    <a href="tel:+110001111111" class="burger-address-link">+11 (000) 111-11-11</a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="burger-address-link">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="down-text-list">
+            <li class="title-two-list-icons">
+                <a href="" class="title-two-list-icon-link">
+                    <svg class="title-two-list-icon-icons" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="title-two-list-icons">
+                <a href="" class="title-two-list-icon-link">
+                    <svg class="title-two-list-icon-icons" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="title-two-list-icons">
+                <a href="" class="title-two-list-icon-link">
+                    <svg class="title-two-list-icon-icons" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="title-two-list-icons">
+                <a href="" class="title-two-list-icon-link">
+                    <svg class="title-two-list-icon-icons" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
+

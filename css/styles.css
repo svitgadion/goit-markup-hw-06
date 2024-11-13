@@ -207,7 +207,7 @@ span.word {
     background-image: linear-gradient(
         rgba(46,47,66,0.7), 
         rgba(46,47,66,0.7)),
-        url(../images/Dark-bg.mobile.jpg);
+        url(../images/dark-bg-mob.jpg);
     padding: 188px 0;
     max-width: 320px;
     min-height: 432px;
@@ -222,7 +222,7 @@ span.word {
 (-webkit-device-pixel-ratio:2) {
     .fon {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/Dark-bg.mob2x.jpg);
+            url(../images-2x/Dark-bg-mob2x-min.jpg);
     }
 }
 
@@ -268,7 +268,7 @@ span.word {
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), 
-            url(../images/Dark-bg.table.jpg);
+            url(../images/dark-bg-pl.jpg);
         padding: 112px 0;
         max-width: 768px;
         min-height: 436;
@@ -281,7 +281,7 @@ span.word {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-bg.table2x.jpg);
+        url(../images-2x/Dark-bg-pl2x-min.jpg);
     }
 }
 
@@ -311,7 +311,7 @@ span.word {
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7), 
             rgba(46, 47, 66, 0.7)),
-            url(../images/people-office2x.jpg);
+            url(../images-2x/people-office2x-min.jpg);
     }
 }
 .title {
